@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaMonant.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="shortcut icon" href="\Users\Usuario\Downloads\LOGO.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand&family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="monant.js"></script>
+    <title>Monant Web - Inicio</title>
+</head>
+<body>
+
+    <nav class="contenedorNav">
+        <div class="contNav1">
+            <div class="itemNav1"><img src="\Users\Usuario\Downloads\LOGO.png" alt="" class="icono"></div>
+            <div class="itemNav1"> <img src="\Users\Usuario\Downloads\monant-logotipo.png" alt="" class="logo"></div>
+        </div>
+        <div class="contNav2">
+            <div class="itemNav2"> <a href="paginaMonant.html" class="a3 inicio">Inicio</a> </div>
+            <div class="itemNav2"> <a href="monantViaje.html" class="a3">Viaje</a> </div>
+            <div class="itemNav2"> <a href="monantContacto.html" class="a3">Contacto</a> </div>
+            <div class="itemNav2"><i class="las la-user usuarioLogin"></i></div>
+        </div>
+    </nav>
+
+    <section class="menuLogin">
+        <input type="text" placeholder="Usuario" class="itemLogin inputLogin">
+        <input type="password" placeholder="Contraseña" class="itemLogin inputLogin">
+        <button class="itemLogin botonLogin">Ingresar</button>
+        <a href="monantRegistro.html" class="registrate">Registrate</a>
+    </section>
+
+    <header class="contenedorHeader">
+        
+        <div class="itemHeader"><h1 class="titulo">¡Viví la Experiencia del Carpooling!</h1></div>
+        <div class="itemHeader"><h2 class="subtitulo">Empezá a compartir auto con nosotros</h2></div>
+        <div class="itemHeader"><button class="botonPrincipal"><a href="monantViaje.html" class="a1">USÁ LA PLATAFORMA</a></button></div>
+        <div class="itemHeader"><a href="#verMas" class="itemHeader a3">Qué es el carpooling?</a></div>
+    </header>
+
+    <section class="contenedorIconos">
+        <div class="contIconos1">
+            <div class="itemIconos">
+                <div class="subCont1">
+                <i class="las la-map-marker iconosItems iconosub maker"></i>
+                <h3 class="iconosItems subtIconos">Programá trayectos</h3>
+                <p class="iconosItems parrafoIconos">Elige multiples destinos de forma sencilla para tus desplazamientos del día a día.</p>
+                <button class="iconosItems botonIconos"><a href="monantViaje.html" class="a2">Crear Viaje</a></button>
+                </div>
+            <div class="itemIconos">
+                <div class="subCont2">
+                    <i class="las la-shopping-bag iconosItems iconosub"></i>
+                    <h3 class="iconosItems subtIconos">Ganá beneficios</h3>
+                    <p class="iconosItems parrafoIconos"><b>Monant</b> ofrece un sistema de descuentos en peajes y estaciones de servicios adheridas.</p>
+                    <button class="iconosItems botonIconos"><a href="#verMas" class="a2">Ver más</a></button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="contIconos2">
+            <div class="itemIconos2"></div>
+        </div>
+        <div class="contIconos3">
+            <div class="itemIconos">
+                <div class="subCont3">
+                <i class="lar la-heart iconosItems iconosub2"></i>
+                <h3 class="iconosItems subtIconos2">Dejá tu valoración</h3>
+                <p class="iconosItems parrafoIconos2">Elige a tus compañeros de trayecto según las valoraciones de otros usuarios.</p>
+                <button class="iconosItems botonIconos2"><a href="monantViaje.html" class="a2">Valorar</a></button>
+                </div>
+            <div class="itemIconos">
+                <div class="subCont4">
+                    <i class="las la-cog iconosItems iconosub2"></i>
+                    <h3 class="iconosItems subtIconos2">Brindamos soporte 24/7</h3>
+                    <p class="iconosItems parrafoIconos2">Consulta a nuestro soporte de ayuda ante cualquier problema.</p>
+                    <button class="iconosItems botonIconos2"><a href="monantContacto.html" class="a2">Contactar</a></button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedorDescarga">
+        <div class="contItemDescarga1">
+            <div class="imagenTelefono">
+                
+            </div>
+        </div>
+        <div class="contItemDescarga2">
+            <h3 class="itemsDescargas subtDescargas">Descargá nuestra app para acceder a varios beneficios!</h3> 
+            <p class="itemsDescargas parrafoDescargas">Obtené puntos por cada viaje que realices, acumulá puntos para conseguir descuentos en peajes, y estaciones de servicios adheridas!</p>
+            <div class="subContDescarga">
+                <i class="lab la-google-play itemsDescargas" onclick="googlePlay()"></i>
+                <i class="lab la-apple itemsDescargas" onclick="appleStore()"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedorCarpooling" id="verMas">
+        <div class="subContCar1">
+            <h2 class="itemCar subtCar">Qué es el Carpooling?</h2>
+            <p class="itemCar parrafoCar">Es la práctica que consiste en que un grupo de personas compartan un mismo auto, para ello ponemos en contacto a personas que viven y trabajan (o estudian) cerca para que compartan viaje en sus desplazamientos del día a día.</p>
+            <div class="itemCar subContIconoYParr parr1">
+                <i class="las la-dollar-sign"></i> <p class="parrafito">Ahorra dinero compartiendo gastos con tus compañeros de viaje.</p>
+            </div>
+            <div class="itemCar subContIconoYParr">
+                <i class="lar la-lightbulb"></i> <p class="parrafito" >Ayuda a cambiar el medio ambiente disminuyendo la cantidad de vehículos en circulación.</p>
+            </div>
+            <div class="itemCar subContIconoYParr">
+                <i class="las la-grin"></i> <p class="parrafito">Conoce a más gente y pasa un agradable momento en tus viajes.</p>
+            </div>
+            <button class="itemCar botonCar"><a href="monantViaje.html" class="a1">Sumate ahora!</a></button>
+        </div>
+        <div class="subContCar2">
+            <iframe width="450px" height="350px" src="https://www.youtube.com/embed/dYYMj-yPpuM" title="¿Qué es Carpool?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <footer class="contenedorFooter">
+        <div class="contFooter1">
+            <div > <img src="\Users\Usuario\Downloads\monant-isologotipoBLANCO.png" alt="" class="isologo"></div>
+            <p class="parrafitoFoot">Plataforma líder de carpooling urbano en Argentina</p>
+        </div>
+        <div class="contFooter2">
+            <div class="contenedorSobreNos">
+                <div class="sobreNos1">
+                <h3 class="subtFoot">Sobre Nosotros</h3>
+                <ul>
+                    <li>
+                        <a href="monantRegistro.html" class="typ">Términos y condiciones de Uso</a>
+                    </li>
+                    <li>
+                        <a href="monantRegistro.html" class="typ">Política de privacidad</a>
+                    </li>
+                </ul>
+                </div>
+            
+
+                <div class="sobreNos2">
+                    <h3 class="subtFoot">Información</h3>
+                    <ul>
+                        <li>
+                            <a href="monantContacto.html" class="typ">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="monantContacto.html" class="typ">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

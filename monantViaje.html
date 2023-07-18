@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaMonant.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="shortcut icon" href="\Users\Usuario\Downloads\LOGO.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand&family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="monant.js"></script>
+
+    <title>Monant Web - Viaje</title>
+</head>
+<body>
+
+    <nav class="contenedorNav">
+        <div class="contNav1">
+            <div class="itemNav1"><img src="\Users\Usuario\Downloads\LOGO.png" alt="" class="icono"></div>
+            <div class="itemNav1"> <img src="\Users\Usuario\Downloads\monant-logotipo.png" alt="" class="logo"></div>
+        </div>
+        <div class="contNav2">
+            <div class="itemNav2"> <a href="paginaMonant.html" class="a3">Inicio</a> </div>
+            <div class="itemNav2"> <a href="monantViaje.html" class="a3 viaje">Viaje</a> </div>
+            <div class="itemNav2"> <a href="monantContacto.html" class="a3">Contacto</a> </div>
+            <div class="itemNav2"><i class="las la-user usuarioLogin"></i></div>
+
+        </div>
+    </nav>
+
+    <section class="menuLogin">
+        <input type="text" placeholder="Usuario" class="itemLogin inputLogin">
+        <input type="password" placeholder="Contraseña" class="itemLogin inputLogin">
+        <button class="itemLogin botonLogin">Ingresar</button>
+        <a href="monantRegistro.html" class="registrate">Registrate</a>
+    </section>
+
+
+    <header class="contenedorHeaderViaje">
+        <h1 class="tituloPrincipal">Viajá por Argentina con Monant!</h1>
+    </header>
+
+    <div class="encontraViaje">
+        <div class="encontraViajeSub1">
+            <h3 class="subtViaje">Encontrá tu viaje</h3>
+        </div>
+
+        <div class="encontraViajeSub2">
+            <form action="">
+                <input type="search" placeholder="Origen" class="inputViaje origen" id="origen">
+                <input type="search" placeholder="Destino" class="inputViaje destino" id="destino">
+                <input type="date" placeholder="Fecha" class="inputViaje fecha" id="fecha">
+                <input type="time" class="inputViaje tiempo" id="tiempo" >
+                <button class="botonViaje buscarViaje" onclick="return buscarViaje()">Buscar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <section class="contenedorEncontraViaje">
+        <div class="contEncontraViajeGrid">
+            <div class="itemGrid">
+                <div class="contItemsEncontra2">
+                    <h3 class="itemEncontra subtEncontra">Ordenar por:</h3>
+                    <form action="" class="contItemsEncontra2">
+                     <label for="" class="itemEncontra subLabel">Salida más temprana   <input type="radio" name="a1">  </label>
+                     <label for=""class="itemEncontra subLabel">Cerca del punto de salida   <input type="radio" name="a1">  </label>
+                     <label for=""class="itemEncontra subLabel">Cerca del punto de llegada   <input type="radio" name="a1">  </label>
+                     <button class="itemEncontra botonEncontra subLabel">Aplicar cambios</button> 
+                    </form>
+                </div>
+            </div>
+            
+            <div class="itemGrid contEncontrar">
+                <div class="itemGridSubCont">
+                    <div class=" itemGridSub  contItemsEncontra"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <p class=" itemGridSub buscarOrigen  buscarBotones"></p>
+                    <div class="itemGridSub  contItemsEncontra"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <p class="itemGridSub buscarDestino buscarBotones"></p>
+                </div>
+                <div class="itemGridSubCont">
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-calendar"></i> Fecha</div>
+                    <p class="itemGridSub buscarFecha buscarBotones"></p>
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-clock"></i> Horario</div>
+                    <p class="itemGridSub buscarTiempo buscarBotones"></p>
+                    <button class="itemGridSub botonEncontra contItemsEncontra">Ver más</button>
+                </div>
+                <div class="itemGridSubCont">
+                    <i class="las la-user imagenUsuario itemGridSub contItemsEncontra"></i>
+                    <h3>Nombre Usuario</h3>
+                    <div class="itemGridSub iconos contItemsEncontra"><i class="las la-star"></i> <i class="lar la-star"></i> <i class="lar la-star"></i></div>
+                </div>
+            </div>
+            
+            <div class="itemGrid">
+                <div class="contItemsEncontra2">
+                    <h3 class="itemEncontra subtEncontra">Horario de salida:</h3>
+                    <form action="" class="contItemsEncontra2">
+                     <label for="" class="itemEncontra subLabel">6:00hs - 12:00hs   <input type="radio" name="a2">  </label>
+                     <label for=""class="itemEncontra subLabel">12:00hs - 18:00hs   <input type="radio" name="a2">  </label>
+                     <label for=""class="itemEncontra subLabel">Más de 18:00hs   <input type="radio" name="a2">  </label>
+                     <button class="itemEncontra botonEncontra subLabel">Aplicar cambios</button> 
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="itemGrid contEncontrar">
+                <div class="itemGridSubCont">
+                    <div class="itemGridSub  contItemsEncontra"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <p class=" itemGridSub buscarOrigen buscarBotones"></p>
+                    <div class="itemGridSub  contItemsEncontra"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <p class="itemGridSub buscarDestino buscarBotones"></p>
+                </div>
+                <div class="itemGridSubCont">
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-calendar"></i> Fecha</div>
+                    <p class="itemGridSub buscarFecha buscarBotones"></p>
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-clock"></i> Horario</div>
+                    <p class="itemGridSub buscarTiempo buscarBotones"></p>
+                    <button class="itemGridSub botonEncontra contItemsEncontra">Ver más</button>
+                </div>
+                <div class="itemGridSubCont">
+                    <i class="las la-user imagenUsuario itemGridSub contItemsEncontra"></i>
+                    <h3>Nombre Usuario</h3>
+                    <div class="itemGridSub iconos contItemsEncontra"><i class="las la-star"></i> <i class="las la-star"></i> <i class="lar la-star"></i></div>
+                </div>
+            </div>
+            
+            <div class="itemGrid">
+                <div class="contItemsEncontra2">
+                    <h3 class="itemEncontra subtEncontra">Servicios:</h3>
+                    <form action="" class="contItemsEncontra2">
+                     <label for="" class="itemEncontra subLabel">Perfil verificado   <input type="radio" name="a3">  </label>
+                     <label for=""class="itemEncontra subLabel">Max. 2 personas atrás   <input type="radio" name="a3">  </label>
+                     <label for=""class="itemEncontra subLabel">Aceptación automática   <input type="radio" name="a3">  </label>
+                     <button class="itemEncontra botonEncontra subLabel">Aplicar cambios</button> 
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="itemGrid contEncontrar">
+                <div class="itemGridSubCont">
+                    <div class="itemGridSub  contItemsEncontra"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <p class=" itemGridSub buscarOrigen buscarBotones"></p>
+                    <div class="itemGridSub  contItemsEncontra"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <p class="itemGridSub buscarDestino buscarBotones"></p>
+                </div>
+                <div class="itemGridSubCont">
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-calendar"></i> Fecha</div>
+                    <p class="itemGridSub buscarFecha buscarBotones"></p>
+                    <div class="itemGridSub contItemsEncontra"><i class="las la-clock"></i> Horario</div>
+                    <p class="itemGridSub buscarTiempo buscarBotones"></p>
+                    <button class="itemGridSub botonEncontra contItemsEncontra">Ver más</button>
+                </div>
+                <div class="itemGridSubCont">
+                    <i class="las la-user imagenUsuario itemGridSub contItemsEncontra"></i>
+                    <h3>Nombre Usuario</h3>
+                    <div class="itemGridSub iconos contItemsEncontra"><i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="publicaViaje">
+        <div class="publicaViajeSub1">
+            <h3 class="subtPublica">Publicá tu viaje</h3>
+        </div>
+
+        <div class="publicaViajeSub2">
+            <form action="">
+                <input type="search" placeholder="Origen" class="inputViaje origen" id="origen2">
+                <input type="search" placeholder="Destino" class="inputViaje destino" id="destino2">
+                <input type="date" placeholder="Fecha" class="inputViaje fecha" id="fecha2">
+                <input type="time" class="inputViaje tiempo" id="tiempo2">
+                <input type="number" class="inputViaje pasajeros" placeholder="Cant" min="1" max="4" id="pasajeros2">
+                <button class="botonViaje crearViaje" onclick="return crearViaje()">Crear</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="contenedorPublicaViaje">
+            <h3>Últimos viajes programados.</h3>
+            <div class="contPublicacion">
+                <div class="publicacion">
+                    <i class="las la-user imagenUsuario"></i>
+                    <h3 class="itemPublicacion nombreUsuario">Nombre Usuario</h3>
+                    <div class="itemPublicacion iconos"><i class="las la-star"></i> <i class="las la-star"></i> <i class="lar la-star"></i></div>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <p class="crearOrigen crearBotones"></p>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <p class="crearDestino crearBotones"></p>
+                    <div class="itemPublicacion iconos"><i class="las la-user"></i>Lugares Disponibles</div>
+                    <p class="crearPasajeros crearBotones"></p>
+                    <button class="itemPublicacion botonPublicacion">Ver más</button>
+                </div>
+                <div class="publicacion">
+                    <i class="las la-user imagenUsuario"></i>
+                    <h3 class="itemPublicacion nombreUsuario">Nombre Usuario</h3>
+                    <div class="itemPublicacion iconos"><i class="las la-star"></i> <i class="lar la-star"></i> <i class="lar la-star"></i></div>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <div class="itemPublicacion iconos"><i class="las la-user"></i>3 Lugares Disponibles</div>
+                    <button class="itemPublicacion botonPublicacion">Ver más</button>
+                </div>
+                <div class="publicacion">
+                    <i class="las la-user imagenUsuario"></i>
+                    <h3 class="itemPublicacion nombreUsuario">Nombre Usuario</h3>
+                    <div class="itemPublicacion iconos"><i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i></div>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marker"></i> <b>Origen</b></div>
+                    <div class="itemPublicacion iconos"><i class="las la-map-marked-alt"></i> <b>Destino</b></div>
+                    <div class="itemPublicacion iconos"><i class="las la-user"></i>1 Lugares Disponibles</div>
+                    <button class="itemPublicacion botonPublicacion">Ver más</button>
+                </div>
+            </div>
+    </section>
+
+    <section class="contenedorDudas">
+        <h3 class="subtDudas dudas">¿Tenés dudas?</h3>
+        <button class="botonViaje dudas"><a href="monantContacto.html" class="pregFrec">Preguntas Frecuentes</a></button>
+        <p class="dudas">Encontrá las respuestas a todas tus dudas.</p>
+    </section>
+
+
+
+
+
+
+    <footer class="contenedorFooter">
+        <div class="contFooter1">
+            <div > <img src="\Users\Usuario\Downloads\monant-isologotipoBLANCO.png" alt="" class="isologo"></div>
+            <p class="parrafitoFoot">Plataforma líder de carpooling urbano en Argentina</p>
+        </div>
+        <div class="contFooter2">
+            <div class="contenedorSobreNos">
+                <div class="sobreNos1">
+                <h3 class="subtFoot">Sobre Nosotros</h3>
+                <ul>
+                    <li>
+                        <a href="monantRegistro.html" class="typ">Términos y condiciones de Uso</a>
+                    </li>
+                    <li>
+                        <a href="monantRegistro.html" class="typ">Política de privacidad</a>
+                    </li>
+                </ul>
+                </div>
+            
+
+                <div class="sobreNos2">
+                    <h3 class="subtFoot">Información</h3>
+                    <ul>
+                        <li>
+                            <a href="monantContacto.html" class="typ">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="monantContacto.html" class="typ">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,962 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background: black;
+    color: rgb(242, 212, 92);
+}
+
+.contenedorNav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(241, 205, 63);
+    align-items: center;
+    justify-content: space-around;
+}
+.contNav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contNav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.itemNav2{
+    padding: 30px;
+
+}
+
+.a3{
+    
+    color: black;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.a3:hover{
+    color: rgb(103, 103, 103);
+
+}
+
+.logo{
+    height: 80px;
+    width: 150px;
+}
+
+.icono{
+    height: 56px;
+    width: 56px;
+}
+
+.contenedorFooter{
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    background: black;
+    color: white;
+
+}
+
+
+
+.contenedorSobreNos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sobreNos1,.sobreNos2{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+.contFooter1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.isologo{
+    height: 110px;
+    width: 110px;
+}
+
+
+.contenedorHeader{
+    width: 100%;
+    height: 600px;
+    background: grey;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.rockandpop.cl/wp-content/uploads/2018/11/2c1ee6ba1ae8c1a2ae74e64cff3f7144ce014ce484ec83b5f2b37d13376e9fda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 42px;
+    font-weight: bold;
+    
+}
+.titulo,.subtitulo{
+    text-shadow: 2px 2px black;
+}
+.subtitulo{
+    font-size: 18px;
+}
+
+.itemHeader{
+    color: white;
+}
+
+.botonPrincipal,.botonCar{
+    padding: 14px;
+    background: rgb(233, 52, 30);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 280px;
+    margin-bottom: 10px;
+    color: white;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background: rgb(235, 78, 57);
+    
+}
+
+.contenedorIconos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 205, 63);
+}
+
+.contIconos1{
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.contIconos2{
+    height: 380px;
+    width: 480px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-image: url("https://img.freepik.com/fotos-premium/amigos-coche_392895-6160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contIconos3{
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+}
+
+
+.itemIconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.subCont1,.subCont2,.subCont3,.subCont4{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+
+}
+
+.iconosItems{
+    padding: 1px;
+}
+
+.parrafoIconos{
+    font-size: 13px;
+    color: rgb(52, 48, 40);
+    text-align: end;
+}
+
+.botonIconos,.botonForm{
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    background: rgb(233, 52, 30);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 8px;
+
+}
+
+.subtIconos{
+    align-self: flex-end;
+
+}
+
+.iconosub{
+    align-self: flex-end;
+
+}
+
+.subCont1,.subCont3{
+    margin-bottom: 70px;
+}
+
+
+.parrafoIconos2,.parrafito{
+    font-size: 13px;
+    color: rgb(52, 48, 40);
+    text-align: start;
+}
+
+.botonIconos2{
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    background: rgb(233, 52, 30);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 8px;
+
+}
+
+.subtIconos2{
+    align-self: flex-start;
+
+}
+.iconosub2{
+    align-self: flex-start;
+
+}
+
+.la-map-marker,.la-shopping-bag,.la-heart,.la-cog,.la-google-play,.la-apple,.la-star,.la-dollar-sign,.la-lightbulb,.la-grin{
+    font-size: 38px;
+}
+
+
+
+.contenedorDescarga{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+}
+
+
+
+.contItemDescarga2,.contItemDescarga1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    
+}
+
+.imagenTelefono{
+    align-self: center;
+    justify-self: center;
+    height: 400px;
+    width: 500px;
+    background-image: url("https://cdn.dribbble.com/users/3873964/screenshots/14216267/media/fe34f0470ef7899cc9594a8c9f3f2cec.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subContDescarga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.itemsDescargas{
+    padding: 5px;
+}
+
+.subtDescargas,.subtCar{
+    font-size: 20px;
+}
+
+.la-google-play,.la-apple{
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.la-google-play:hover,.la-apple:hover{
+    color: rgb(114, 114, 114);
+}
+
+
+
+.contenedorCarpooling{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    width: 100%;
+    background: rgb(241, 205, 63);
+}
+
+.subContCar1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    margin: 20px;
+}
+.itemCar{
+    padding: 6px;
+}
+
+.subContIconoYParr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.parr1{
+    margin-top: 20px;
+
+}
+
+
+.la-dollar-sign,.la-lightbulb,.la-grin{
+    padding: 5px;
+    
+}
+
+.parrafoCar{
+    font-size: 15px;
+    text-align: center;
+}
+.botonCar{
+    margin-top: 10px;
+}
+
+.subContCar2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.botonCar{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+li{
+    font-size: 13px;
+}
+
+.subtFoot{
+    margin-left: 24px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    height: 600px;
+    width: 100%;
+    background: rgb(233, 233, 233);
+}
+
+.contImagenYForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedorSubForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input,.itemForm{
+    padding: 8px;
+    margin: 5px;
+    width: 340px;
+    border-radius: 16px;
+    border: solid rgb(96, 87, 63) 2px;
+    background: rgb(236, 236, 236);
+}
+
+.input:hover,.itemForm:hover{
+    background: white;
+    transition: all 0.7s;
+}
+
+.label{
+    padding: 4px;
+    margin: 2px;
+    width: 300px;
+}
+.subtForm,.subtPreg,.subtRegistro{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.botonForm{
+    align-self: center;
+    justify-self: center;
+    margin-top: 28px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.contenedorPreguntas{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    background: rgb(241, 205, 63) ;
+}
+
+.preguntas{
+    display: flex;
+    border-bottom: solid black 2px;
+    padding: 3px;
+    margin: 16px;
+    width: 480px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.respuestas{
+    width: 480px;
+}
+
+.contenedorRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 100%;
+}
+
+.contRedes{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.la-facebook-square,.la-twitter,.la-instagram{
+    cursor: pointer;
+    padding: 3px;
+    font-size: 42px;
+}
+
+.la-facebook-square:hover,.la-twitter:hover,.la-instagram:hover{
+    color: rgb(43, 43, 43);
+}
+.subtRedes{
+    font-size: 30px;
+}
+
+.parrafoRedes{
+    font-size: 14px;
+}
+
+.la-angle-down{
+    font-size: 20px;
+    justify-self: flex-end;
+    margin-left: 10px;
+}
+
+.coment{
+    height: 120px;
+}
+
+.contenedorHeaderViaje{
+    height: 500px;
+    width: 100%;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-image: url("https://a-static.besthdwallpaper.com/man-made-road-in-the-mountains-wallpaper-5120x2880-11051_55.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tituloPrincipal{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.encontraViaje{
+    height: 200px;
+    width: 100%;
+    background:rgb(241, 205, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.encontraViajeSub1,.publicaViajeSub1{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.subtViaje,.subtPublica,.subtDudas{
+    margin-top: 18px;
+    color: white;
+    font-size: 28px;
+    
+}
+
+.encontraViajeSub2,.publicaViajeSub2{
+    padding: 5px;
+    margin: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inputViaje{
+    padding: 10px;
+    margin: 6px;
+    border-radius: 20px;
+    border: none;
+}
+.destino,.origen{
+    width: 260px;
+}
+.pasajeros{
+    width: 60px;
+}
+.subtViaje{
+    color: black;
+}
+.subtPublica{
+    color: white;
+}
+
+.botonViaje,.botonPublicacion,.botonEncontra,.botonLogin,.botonRegistro{
+    padding: 10px;
+    margin: 6px;
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.botonViaje:hover,.botonPublicacion:hover,.botonEncontra:hover,.botonLogin:hover,.botonRegistro:hover{
+    background: rgb(35, 35, 35);
+}
+.contenedorEncontraViaje{
+    height: 800px;
+    width: 100%;
+    background: rgb(233, 233, 233);
+}
+
+.publicaViaje{
+    height: 200px;
+    width: 100%;
+    background: rgb(233, 52, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorPublicaViaje{
+    height: 600px;
+    width: 100%;
+    background: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contPublicacion{
+    width: 82%;
+    height: 82%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.publicacion{
+    height: 92%;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 2px 6px rgb(75, 75, 75);
+}
+
+.itemPublicacion{
+    margin: 6px;
+    padding: 3px;
+}
+.nombreUsuario{
+    font-size: 22px;
+}
+
+.icono{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.la-star,.la-user,.la-map-marker,.la-map-marked-alt,.la-calendar,.la-clock{
+    font-size: 24px;
+}
+
+.imagenUsuario{
+    font-size: 38px;
+}
+.contenedorDudas{
+    height: 300px;
+    width: 100%;
+    background: rgb(241, 205, 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.a2{
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    text-decoration: none;
+
+}
+
+.a1{
+    color: white;
+    text-decoration: none;
+}
+
+.subtDudas{
+    color: black;
+}
+.dudas{
+    margin: 10px;
+}
+.contenedorEncontraViaje,.contItemsEncontra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contEncontraViajeGrid{
+    height: 82%;
+    width: 76%;
+    display: grid;
+    grid-template-rows: 208px 208px 208px;
+    grid-template-columns: 300px 640px;
+    grid-row-gap: 14px;
+    grid-column-gap: 80px;
+    
+}
+
+
+.itemGrid{
+    border-radius: 20px;
+    box-shadow: 4px 2px 6px rgb(75, 75, 75);
+}
+.contEncontrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemGridSubCont{
+    height: 100%;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemGridSub{
+    margin: 3px;
+    padding: 2px;
+}
+.origenYDestino{
+    margin: 16px;
+    padding: 4px;
+}
+
+.botonEncontra{
+    margin: 8px;
+    padding: 6px;
+}
+
+
+.contItemsEncontra2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 6px;
+}
+
+.itemEncontra{
+    margin: 8px;
+}
+.subtEncontra{
+    margin-left: 14px;
+}
+
+.contenedorHeaderViaje,.encontraViaje,.contenedorEncontraViaje,.publicaViaje,.contenedorPublicaViaje,.contenedorDudas,.contenedorFooter{
+    width: 100%;
+}
+
+.subLabel{
+    font-size: 14px;
+}
+
+.pregFrec{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio,.viaje,.contacto{
+    border-bottom: 2px solid black;
+}
+
+
+
+.menuLogin{
+    height: 180px;
+    width: 260px;
+    background: rgb(241, 205, 63);
+    border-radius: 25px;
+    border: 1px solid rgb(65, 54, 10);
+    position: fixed;
+    top: 70px;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itemLogin{
+    margin: 5px;
+    padding: 4.5px;
+}
+
+.inputLogin{
+    border-radius: 15px;
+    width: 188px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    background: rgb(243, 243, 243);
+    font-size: 15px;
+    
+    transition: all 0.5s;
+}
+
+.inputLogin:hover{
+    background: white;
+}
+
+.inputLogin:focus{
+    background: white;
+}
+
+.registrate{
+    color: black;
+    font-size: 14px;
+    
+}
+
+.botonLogin{
+    margin-top: 12px; 
+    padding: 2px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.usuarioLogin{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.usuarioLogin:hover{
+    color: rgb(103, 103, 103);
+}
+.maker{
+    font-size: 38px;
+}
+
+.contenedorRegistro{
+    margin-top: 60px;
+    width: 100%;
+    height: 700px;
+    background: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formRegistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemForm{
+    margin: 10px;
+}
+
+.botonRegistro{
+    margin-top: 24px;
+}
+
+.edad{
+    width: 80px;
+    align-self: flex-start;
+}
+
+.terminosYPolitica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background: white;
+}
+
+.itemTYP{
+    margin: 15px;
+    padding: 10px;
+}
+
+.typ{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.typ:hover{
+    color: grey;
+}
+
+.buscarBotones{
+    background: rgb(229, 202, 96);
+    opacity: 5px;
+    border-radius: 15px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.crearBotones{
+    background: rgb(229, 111, 96);
+    opacity: 5px;
+    border-radius: 15px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
